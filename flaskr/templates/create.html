@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="col d-flex justify-content-center">
+  <h1>{% block title %}New Post{% endblock %}</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+<div class="row d-flex justify-content-center">
+    <div class="col-6 p-3">
+        <input name="title" id="title" value="{{ request.form['title']}}" class="form-control" placeholder="Title of your note" required>
+    </div>
+    <div class="col-9">
+        <textarea name="body" id="body" class="form-control" placeholder="Type in your notes" style="min-height: 50vh;">{{ request.form['body'] }}</textarea>
+        <div class="col text-end">
+            <input type="submit" value="Save" class="btn btn-success m-1" >
+        </div>
+    </div>
+</div>
+</form>
+{% endblock %}

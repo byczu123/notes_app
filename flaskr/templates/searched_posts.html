@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="col d-flex justify-content-center">
+  <h1>{% block title %}Your posts{% endblock %}</h1>
+</div>
+{% endblock %}
+{% block content %}
+<div class="row d-flex">
+{% for post in posts %}
+<div class="card" style="max-width: 30rem; max-height:100rem; margin: 1rem">
+  <header>
+    <div>
+      <h5 class="card-title">{{ post['title'] }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">by {{ post['username'] }} on {{ post['created'].strftime('%Y-%m-%d') }}</h6>
+    </div>
+  </header>
+  <div class="card-body">
+  <p class="card-text">{{ post['body'] }}</p>
+  </div>
+</div>
+{% if not loop.last %}
+{% endif %}
+{% endfor %}
+</div>
+{%endblock %}
