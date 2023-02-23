@@ -1,6 +1,6 @@
 # notes_app
 ## Aplikacja do tworzenia notatek Notes 4 everyone. 
-Backend: Python, Flask Frontend: HTML5,CSS3,BOOTSTRAP 5
+Backend: Python, Flask Frontend: HTML5,CSS3,BOOTSTRAP 5 Baza danych: SQLite
 # Rejestracja
 ![obraz](https://user-images.githubusercontent.com/72974802/220990425-c0709c2c-ca1d-45f6-bbdc-e8874f7b7801.png)
 # Logowanie
