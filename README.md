@@ -1,4 +1,4 @@
-# notes_app
+# Notes 4 everyone
 ## Web app to create notes. Notes 4 everyone. 
 Backend: Python, Flask Frontend: HTML5,CSS3,BOOTSTRAP 5 Database: SQLite
 # Register page
